@@ -1,3 +1,3 @@
 class NotEnoughCardExeption(Exception):
     def __init__(self):
-        super().__init__(self)
+        super().__init__()

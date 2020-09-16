@@ -8,7 +8,7 @@ class Shape:
     def get_high(cls, hand : set):
         high = None
         for comb in cls.get_all(hand):
-            if comb >= high:
+            if high is None or comb >= high:
                 high = comb
         return high
 
